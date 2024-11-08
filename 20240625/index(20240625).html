@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>監考服務</title>
+  <script src="./libs/sweetalert2.all.min.js"></script>
+  <script src="./libs/dom-to-image.min.js"></script>
+  <script src="./libs/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./libs/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/style.css">
+</head>
+
+<body>
+  <table id="invigilate">
+    <thead>
+      <th style="font-size: 24px;">南臺科技大學 照顧服務員 單一級 技術士術科考試流程表</th>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="ctrl">
+    <div class="input-group">
+      <div class="input-group-text">操作區域</div>
+      <button type="button" class="btn btn-success" id="clean-cookie">清除緩存</button>
+      <input class="btn-check" type="checkbox" id="comfirm" checked>
+      <label class="btn btn-outline-info" for="comfirm">防止誤觸</label>
+      <input class="btn-check" type="radio" name="btnradio" id="unlock">
+      <label class="btn btn-outline-danger" for="unlock">解鎖模式</label>
+      <input class="btn-check" type="radio" name="btnradio" id="edit">
+      <label class="btn btn-outline-warning" for="edit">編輯模式</label>
+      <input class="btn-check" type="radio" name="btnradio" id="absent">
+      <label class="btn btn-outline-primary" for="absent">缺席模式</label>
+      <button type="button" class="btn btn-secondary" id="clean-mode">模式清除</button>
+      <button type="button" class="btn btn-primary" id="btn-screenshot">頁面截圖</button>
+    </div>
+    <div class="input-group"></div>
+  </div>
+</body>
+<script src="timer.js"></script>
+<script src="record.js"></script>
+
+</html>
