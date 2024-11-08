@@ -1,0 +1,112 @@
+:root {}
+
+/* 隱藏滾動軸 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  /* 關閉選取文字 */
+  user-select: none;
+}
+
+/* 彈跳視窗 */
+.ctrl,
+.swal2-title,
+.swal2-html-container {
+  font-family: 標楷體;
+}
+
+#timeset {
+  justify-content: center;
+}
+
+#setHour,
+#setMinute {
+  margin: 0;
+  width: 20%;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* 顯示錯誤消息的樣式 */
+.swal2-validation-message {
+  font-size: 14px;
+  color: red;
+}
+
+/********** 考試表 **********/
+
+#invigilate {
+  width: 100%;
+  height: 100vh;
+  min-width: 1000px;
+  min-height: 714px;
+  font-family: '標楷體';
+  border-collapse: collapse;
+  line-height: 1.25;
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#invigilate>thead {
+  font-size: 16px;
+  background-color: white;
+}
+
+.room {
+  font-size: 20px;
+  width: 1%;
+  min-width: 25px;
+}
+
+.name {
+  font-size: 17px;
+  text-align: justify;
+  padding: 0 .5%;
+  width: 8%;
+  min-width: 135px;
+}
+
+.clickAble {
+  min-width: 60px;
+}
+
+.student {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/********** 依狀態給予不同背景顏色 **********/
+
+/* 學生已選中（進場） */
+.selected {
+  background-color: yellow;
+}
+
+/* 學生被鎖定（離場） */
+.locked {
+  background-color: grey;
+}
+
+/* 學生缺席 */
+.absent {
+  background-color: black;
+}
+
+/* 監考老師離場 */
+.leave {
+  background-color: red;
+}
